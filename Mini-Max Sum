@@ -1,0 +1,23 @@
+#!/bin/python
+
+import sys
+
+m = []
+maxv=0
+minv=0
+smax=0
+smin=0
+a,b,c,d,e = raw_input().strip().split(' ')
+a,b,c,d,e = [int(a),int(b),int(c),int(d),int(e)]
+m.append(a)
+m.append(b)
+m.append(c)
+m.append(d)
+m.append(e)
+
+maxv=max(m)
+minv = min(m)
+
+smax = a+b+c+d+e-minv
+smin = a+b+c+d+e-maxv
+print smin,smax
