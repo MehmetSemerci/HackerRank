@@ -1,0 +1,30 @@
+n=input()
+li=[]
+i1=0
+i2=0
+nli=[]
+for i in xrange(n):
+    nli=raw_input().strip().split(" ")
+    if len(nli)==1:
+        com = nli[0]
+    elif len(nli)==2:
+        com = nli[0]
+        i1=nli[1]
+    elif len(nli)==3:
+        com = nli[0]
+        i1=nli[1]
+        i2=nli[2]
+    if com=="insert":
+        li.insert(int(i1),int(i2))
+    elif com=="print":
+        print li
+    elif com=="remove":
+        li.remove(int(i1))
+    elif com=="append":
+        li.append(int(i1))
+    elif com=="sort":
+        li.sort()
+    elif com=="pop":
+        li.pop()
+    elif com=="reverse":
+        li.reverse()
