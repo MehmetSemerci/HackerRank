@@ -1,0 +1,17 @@
+#!/bin/python
+
+import sys
+
+m = []
+maxv = minv = smax = smin = 0
+
+m = (raw_input().strip().split(' '))
+#a,b,c,d,e = [int(a),int(b),int(c),int(d),int(e)]
+maxv , minv = max(m) , min(m)
+
+for i in xrange(len(m)):
+    smax = smax + int(m[i])
+    smin = smin + int(m[i])
+smax = smax - int(minv)
+smin = smin - int(maxv)
+print smin,smax
