@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    float mealp,tip,tax,tcost;
+    int tipp,taxp;
+   
+    
+    scanf("%f",&mealp);
+    scanf("%d",&tipp);
+    scanf("%d",&taxp);
+    
+    tax=(mealp*taxp/100);
+    tip=(mealp*tipp/100);
+    tcost=(mealp+tax+tip);
+    
+    printf("The total meal cost is %.0f dollars.",tcost);
+      
+    return 0;
+}
