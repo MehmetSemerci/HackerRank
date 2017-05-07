@@ -1,0 +1,20 @@
+#!/bin/python
+
+import sys
+
+m = []
+
+n,k,q = raw_input().strip().split(' ')
+n,k,q = [int(n),int(k),int(q)]
+a = map(int,raw_input().strip().split(' '))
+c=[]
+for h in range(0,n):
+    c.append("1")
+
+for b in range(0,q):
+    m.append(int(raw_input().strip()))
+for g in range(0,n):
+    c[(g+k)%n]=a[g]
+for j in range(0,q):
+    print c[m[j]]
+  
