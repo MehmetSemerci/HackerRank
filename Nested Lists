@@ -1,0 +1,23 @@
+n = int(raw_input())
+nlist=[]
+glist=[]
+
+for i in xrange(n):
+    nlist.append(raw_input())
+    glist.append(float(raw_input()))
+    
+a=min(glist)
+
+while a in glist:
+    glist[glist.index(min(glist))]=100
+    
+a=min(glist)
+nelist=[]
+
+while a in glist:
+    nelist.append(nlist[glist.index(min(glist))])
+    glist[glist.index(min(glist))]=100
+    
+nelist.sort()
+for i in nelist:
+    print i
