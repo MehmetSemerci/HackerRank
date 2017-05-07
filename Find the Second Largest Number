@@ -1,0 +1,6 @@
+n = int(raw_input())
+arr = map(int, raw_input().split())
+a=max(arr)
+while a in arr:
+    arr.remove(max(arr))
+print max(arr)
