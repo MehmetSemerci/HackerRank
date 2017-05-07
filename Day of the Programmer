@@ -1,0 +1,20 @@
+def leap(year):
+    if year==1700 or year==1800 or year==1900:
+        return 1
+    if year%400==0 or (year%4==0 and year%100!=0):
+        return 1
+    else:
+        return 0
+n=input()
+if n == 1918:
+    print "26.09.1918"
+    exit()
+day=0
+if leap(n):
+	day=244
+else:
+	day=243
+
+day=256-day
+
+print str(day)+"."+"09"+"."+str(n)
