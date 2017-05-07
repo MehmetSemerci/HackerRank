@@ -1,0 +1,12 @@
+n,k=raw_input().strip().split(" ")
+ar=raw_input().strip().split(" ")
+ar.remove(ar[int(k)])
+m=input()
+sum=0
+i=0
+for i in xrange(len(ar)):
+    sum+=int(ar[i])
+if sum/2==m:
+    print "Bon Appetit"
+else:
+    print m-sum/2
