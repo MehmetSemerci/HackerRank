@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main()
+{
+	int a,b,c;
+	char d,f;
+	
+	scanf("%d:%d:%d%c%c",&a,&b,&c,&d,&f);
+    if(a>=12)
+		a=a-12;
+	
+	if(d=='P')
+	{
+		a=a+12;
+		if(a>=24)
+		{
+			a=a-24;
+		}
+	}
+	else
+	
+	fflush(stdin);
+	printf("%02d:%02d:%02d",a,b,c);
+	fflush(stdin);
+	
+	return 0;
+}
