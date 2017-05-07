@@ -1,0 +1,15 @@
+n = input()
+lis=[]
+odd=""
+even=""
+for i in xrange(n):
+    lis.append(raw_input())
+for i in xrange(n):
+    
+    for j in xrange(0,len(lis[i]),2):
+            even=even+lis[i][j]
+    for j in xrange(1,len(lis[i]),2):
+            odd=odd+lis[i][j]
+    print even,odd
+    even=""
+    odd=""
