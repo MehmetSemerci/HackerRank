@@ -1,0 +1,17 @@
+kg1p,kg1a,kg2p,kg2a=map(int,raw_input().strip().split(" "))
+
+i=0
+while(i!=1):
+	kg1p+=kg1a
+	kg2p+=kg2a
+	if kg2p==kg1p:
+		print "YES"
+		i=1
+	if kg1p>kg2p and kg1a>=kg2a:
+		print "NO"
+		break
+	elif kg2p>kg1p and kg2a>=kg1a:
+		print "NO"
+		break
+	
+	
