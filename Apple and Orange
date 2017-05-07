@@ -1,0 +1,17 @@
+s,t=map(int,raw_input().strip().split(" "))
+a,o=map(int,raw_input().strip().split(" "))
+ap,ora=map(int,raw_input().strip().split(" "))
+
+aps=map(int,raw_input().strip().split(" "))
+oras=map(int,raw_input().strip().split(" "))
+
+sama=0
+samo=0
+for i in xrange(len(aps)):
+	if a+aps[i]>=s and a+aps[i]<=t:
+		sama+=1
+for i in xrange(len(oras)):
+	if o+oras[i]>=s and o+oras[i]<=t:
+		samo+=1
+print sama
+print samo
