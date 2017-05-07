@@ -1,0 +1,9 @@
+
+
+n,k = raw_input().strip().split(' ')
+n,k = [int(n),int(k)]
+height = map(int, raw_input().strip().split(' '))
+magic=0
+if max(height)>k:
+    magic=max(height)-k
+print magic
