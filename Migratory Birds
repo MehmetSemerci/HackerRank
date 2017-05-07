@@ -1,0 +1,6 @@
+n=input()
+ar=map(int,raw_input().strip().split(" "))
+arr=[0,0,0,0,0]
+for i in xrange(len(ar)):
+	arr[ar[i]-1]+=1
+print arr.index(max(arr))+1
