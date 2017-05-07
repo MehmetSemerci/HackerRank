@@ -1,0 +1,17 @@
+n=input()
+ar=map(int,raw_input().strip().split(" "))
+min=0
+max=0
+mini=ar[0]
+maxi=ar[0]
+maxtime=0
+mintime=0
+for i in xrange(len(ar)):
+	if ar[i]>maxi:
+		maxi=ar[i]
+		maxtime+=1
+	if ar[i]<mini:
+		mini=ar[i]
+		mintime+=1
+print maxtime, mintime
+
