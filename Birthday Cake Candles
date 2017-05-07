@@ -1,0 +1,10 @@
+
+
+n = int(raw_input().strip())
+h = map(int,raw_input().strip().split(' '))
+m=max(h)
+c=0
+for i in xrange(len(h)):
+    if h[i]==m:
+        c+=1
+print c
