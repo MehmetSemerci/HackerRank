@@ -1,0 +1,8 @@
+a = int(raw_input())
+n = int(raw_input())
+list1 = map(int,raw_input().strip().split(" "))
+for i in range(0,n):
+    if list1[i]==a:
+        b = i   
+print b        
+        
